@@ -70,7 +70,7 @@ if options[:merge]
        if not somaFound
          first = index # start index of current soma part
          somaFound = true # first point with type SomaType assigned as singleton soma
-         if not (somaIndex != -1) then lines_clean << line; somaIndex = index end 
+         if somaIndex == -1 then lines_clean << line; somaIndex = index; end 
        end
       last = index # end index of current soma part
     else
