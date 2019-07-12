@@ -1,9 +1,20 @@
 #!/usr/bin/env ruby -w
-## author: stephanmg <stephan@syntaktischer-zucker.de>
-## summary: curates a SWC, e.g. shifts multi branches, merges soma, fixes identifiers 
+# == Synopsis
+#
+# Curates a SWC file, e.g. shifts multi-branches and merges soma. 
+# Fixes identifiers.
+#
+# == Usage
+#
+# ruby tame_branching.rb -f FILENAME [options] [-hdims]"
+#
+# == Author
+#
+# stephanmg <stephan@syntaktischer-zucker.de>
 
 # libraries
 require 'optparse'
+# require 'rdoc/usage'
 
 # constants
 Message = "Usage: tame_branching.rb -f FILENAME [options] [-hdims]"
